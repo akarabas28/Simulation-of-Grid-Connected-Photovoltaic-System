@@ -1,0 +1,3480 @@
+Model {
+  Name			  "pvgrid"
+  Version		  7.8
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.44"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "GBK"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
+  PhysicalModelingChecksum "2070025705"
+  PhysicalModelingParameterChecksum "3901422622"
+  PhysicalModelingProducts "Power_System_Blocks"
+  Created		  "Tue Nov 29 18:59:54 2011"
+  Creator		  "Administrator"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "shinesong"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun May 26 17:02:53 2013"
+  RTWModifiedTimeStamp	  291488522
+  ModelVersionFormat	  "1.%<AutoIncrement:44>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.11.1"
+      Array {
+	Type			"Handle"
+	Dimension		10
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.11.1"
+	  StartTime		  "0.0"
+	  StopTime		  "0.15"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "ode23t"
+	  SolverName		  "ode23t"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.11.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.11.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    4
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "OptimizeModelRefInitCode"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  AccelParallelForEachSubsystem	on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.11.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "Warning"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.11.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.11.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.11.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.11.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  GenerateCodeMetricsReport off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.11.1"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.11.1"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"PortableWordSizes"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.11.1"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  13
+	  Version		  "1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "Name"
+	    PropName		    "DisabledProps"
+	  }
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  InputDerivativeDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeLogType	  "none"
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 243, 69, 1123, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Newton-Raphson"
+      Iterations	      "3"
+    }
+    Block {
+      BlockType		      Memory
+      X0		      "0"
+      InheritSampleTime	      off
+      LinearizeMemory	      off
+      LinearizeAsDelay	      off
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      ApproximationMethod     "None"
+      NumberOfIterations      "11"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  System {
+    Name		    "pvgrid"
+    Location		    [85, 94, 1189, 705]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "418"
+    Block {
+      BlockType		      Reference
+      Name		      "AC"
+      SID		      "1"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [903, 360, 927, 395]
+      BlockRotation	      270
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Electrical\nSources/AC Voltage Source"
+      SourceType	      "AC Voltage Source"
+      Amplitude		      "155.5"
+      Phase		      "0"
+      Frequency		      "60"
+      SampleTime	      "0"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      BusCreator
+      Name		      "Bus\nCreator"
+      SID		      "122"
+      Ports		      [2, 1]
+      Position		      [910, 231, 915, 269]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "C"
+      SID		      "2"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [566, 300, 614, 350]
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      BranchType	      "C"
+      Resistance	      "1.0"
+      Inductance	      "1.0"
+      SetiL0		      off
+      InitialCurrent	      "0"
+      Capacitance	      "22e-6"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "4"
+      Position		      [25, 180, 55, 210]
+      ShowName		      off
+      Value		      "1000"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      SID		      "120"
+      Position		      [310, 585, 340, 615]
+      Value		      "110"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Controlled Current Sourc"
+      SID		      "5"
+      Ports		      [1, 0, 0, 0, 0, 1, 1]
+      Position		      [165, 187, 210, 223]
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Electrical\nSources/Controlled Current Source"
+      SourceType	      "Controlled Current Source"
+      Initialize	      on
+      Source_Type	      "DC"
+      Amplitude		      "0"
+      Phase		      "0"
+      Frequency		      "0"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Current Measurement"
+      SID		      "6"
+      Ports		      [0, 1, 0, 0, 0, 1, 1]
+      Position		      [230, 186, 260, 224]
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      PhasorSimulation	      off
+      OutputType	      "Complex"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Diode"
+      SID		      "7"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [515, 195, 570, 235]
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Power\nElectronics/Diode"
+      SourceType	      "Diode"
+      Ron		      "0.001"
+      Lon		      "0"
+      Vf		      "0.8"
+      IC		      "0"
+      UseSnubber	      off
+      Rs		      "500"
+      Cs		      "250e-9"
+      Measurements	      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      "315"
+      Ports		      [1]
+      Position		      [975, 90, 1065, 120]
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Divide"
+      SID		      "121"
+      Ports		      [2, 1]
+      Position		      [380, 577, 410, 608]
+      Inputs		      "*/"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      SID		      "418"
+      Position		      [970, 300, 1000, 330]
+      ZOrder		      -8
+      BlockMirror	      on
+      Gain		      "0.3"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "IGBT"
+      SID		      "219"
+      Ports		      [1, 0, 0, 0, 0, 1, 1]
+      Position		      [445, 305, 500, 355]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Power\nElectronics/IGBT"
+      SourceType	      "IGBT"
+      Ron		      "0.001"
+      Lon		      "0"
+      Vf		      "1"
+      Tf		      "1e-6"
+      Tt		      "2e-6"
+      IC		      "0"
+      Rs		      "1e5"
+      Cs		      "inf"
+      Measurements	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "L1"
+      SID		      "9"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [840, 317, 895, 343]
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      BranchType	      "L"
+      Resistance	      "1.0"
+      Inductance	      "2e-2"
+      SetiL0		      off
+      InitialCurrent	      "0"
+      Capacitance	      "1.0"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "MPPT"
+      SID		      "284"
+      Ports		      [2, 1]
+      Position		      [395, 483, 435, 527]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"MPPT"
+	Location		[12, 207, 1202, 833]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "V"
+	  SID			  "285"
+	  Position		  [50, 98, 80, 112]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "I"
+	  SID			  "286"
+	  Position		  [50, 298, 80, 312]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  SID			  "287"
+	  Ports			  [2, 1]
+	  Position		  [710, 252, 740, 283]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "D State"
+	  SID			  "291"
+	  Ports			  [2, 1]
+	  Position		  [645, 241, 675, 274]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Db"
+	  SID			  "292"
+	  Position		  [710, 345, 740, 375]
+	  BlockMirror		  on
+	  InheritSampleTime	  on
+	  LinearizeAsDelay	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "DeltaD"
+	  SID			  "293"
+	  Position		  [585, 110, 615, 140]
+	  Value			  "0.01"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "DeltaP*DeltaV"
+	  SID			  "294"
+	  Ports			  [2, 1]
+	  Position		  [450, 186, 480, 219]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "I Filter"
+	  SID			  "295"
+	  Ports			  [1, 1]
+	  Position		  [105, 281, 155, 329]
+	  LibraryVersion	  "1.644"
+	  SourceBlock		  "powerlib_extras/Control \nBlocks/1st-Order \nFilter"
+	  SourceType		  "First-Order Filter"
+	  FilterType		  "Lowpass"
+	  Tc			  "1e-3"
+	  Initialize		  off
+	  Vac_Init		  "[0.8 -25 60]"
+	  Vdc_Init		  "-0.4"
+	  PlotResponse		  off
+	  param1		  "[1 500 1]"
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Ib"
+	  SID			  "296"
+	  Position		  [240, 345, 270, 375]
+	  InheritSampleTime	  on
+	  LinearizeAsDelay	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "If DeltaP*DeltaV<0"
+	  SID			  "297"
+	  Position		  [450, 250, 480, 280]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "If DeltaP*DeltaV>0"
+	  SID			  "298"
+	  Position		  [450, 110, 480, 140]
+	  Value			  "-1"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "In"
+	  SID			  "299"
+	  Position		  [175, 290, 210, 320]
+	  SampleTime		  "1e-4"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Pb"
+	  SID			  "300"
+	  Ports			  [2, 1]
+	  Position		  [305, 327, 335, 358]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Pn"
+	  SID			  "301"
+	  Ports			  [2, 1]
+	  Position		  [315, 97, 345, 128]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Pn-Pb"
+	  SID			  "302"
+	  Ports			  [2, 1]
+	  Position		  [380, 152, 410, 183]
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  SID			  "307"
+	  Position		  [550, 178, 570, 232]
+	  NamePlacement		  "alternate"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "V Filter"
+	  SID			  "309"
+	  Ports			  [1, 1]
+	  Position		  [100, 81, 150, 129]
+	  LibraryVersion	  "1.644"
+	  SourceBlock		  "powerlib_extras/Control \nBlocks/1st-Order \nFilter"
+	  SourceType		  "First-Order Filter"
+	  FilterType		  "Lowpass"
+	  Tc			  "1e-3"
+	  Initialize		  off
+	  Vac_Init		  "[0.8 -25 60]"
+	  Vdc_Init		  "-0.4"
+	  PlotResponse		  off
+	  param1		  "[1 500 1]"
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Vb"
+	  SID			  "310"
+	  Position		  [240, 170, 270, 200]
+	  InheritSampleTime	  on
+	  LinearizeAsDelay	  on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Vn"
+	  SID			  "311"
+	  Position		  [175, 90, 210, 120]
+	  SampleTime		  "1e-4"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Vn-Vb"
+	  SID			  "312"
+	  Ports			  [2, 1]
+	  Position		  [390, 282, 420, 313]
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "D"
+	  SID			  "314"
+	  Position		  [815, 283, 845, 297]
+	  NamePlacement		  "alternate"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "V"
+	  SrcPort		  1
+	  DstBlock		  "V Filter"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "I"
+	  SrcPort		  1
+	  DstBlock		  "I Filter"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "V Filter"
+	  SrcPort		  1
+	  DstBlock		  "Vn"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "I Filter"
+	  SrcPort		  1
+	  DstBlock		  "In"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "Ib"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [80, 0]
+	    DstBlock		    "Pn"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Vn"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Pn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 80]
+	    Branch {
+	      DstBlock		      "Vb"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 40; 145, 0; 0, 65]
+	      DstBlock		      "Vn-Vb"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Ib"
+	  SrcPort		  1
+	  Points		  [0, -10]
+	  DstBlock		  "Pb"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Vb"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 80]
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Pb"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [75, 0; 0, 40]
+	    DstBlock		    "Vn-Vb"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Pn"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 45]
+	  DstBlock		  "Pn-Pb"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pb"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -170]
+	  DstBlock		  "Pn-Pb"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "D State"
+	  SrcPort		  1
+	  DstBlock		  "Add"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, 90]
+	  Branch {
+	    DstBlock		    "Db"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -70]
+	    DstBlock		    "D"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Db"
+	  SrcPort		  1
+	  Points		  [-15, 0; 0, -85]
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Pn-Pb"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 25]
+	  DstBlock		  "DeltaP*DeltaV"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vn-Vb"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "DeltaP*DeltaV"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "DeltaP*DeltaV"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "If DeltaP*DeltaV>0"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 60]
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "If DeltaP*DeltaV<0"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -40]
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 60]
+	  DstBlock		  "D State"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "DeltaD"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "D State"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "PV"
+      SID		      "123"
+      Ports		      [3, 1]
+      Position		      [105, 164, 145, 226]
+      BackgroundColor	      "orange"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDescription	      "PV_modle"
+      MaskPromptString	      "Im|Vm|Voc|Isc|Sref|Tref|a|b|Rs"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit,edit,edit,edit"
+      MaskVariables	      "Im=@1;Vm=@2;Voc=@3;Isc=@4;Sref=@5;Tref=@6;a=@7;b=@8;Rs=@9;"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "13.88|281.6|353.6|14.88|1000|25|0.015|0.7|2"
+      System {
+	Name			"PV"
+	Location		[434, 100, 1145, 757]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Tc"
+	  SID			  "124"
+	  Position		  [40, 553, 70, 567]
+	  BackgroundColor	  "green"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "S"
+	  SID			  "125"
+	  Position		  [40, 433, 70, 447]
+	  BackgroundColor	  "green"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "V"
+	  SID			  "126"
+	  Position		  [315, 303, 345, 317]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "127"
+	  Position		  [190, 470, 220, 500]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "128"
+	  Position		  [175, 15, 205, 45]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "129"
+	  Position		  [190, 185, 220, 215]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "130"
+	  Position		  [110, 260, 140, 290]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  SID			  "131"
+	  Position		  [520, 375, 550, 405]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  SID			  "132"
+	  Position		  [410, 490, 440, 520]
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide"
+	  SID			  "133"
+	  Ports			  [2, 1]
+	  Position		  [125, 432, 155, 463]
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide1"
+	  SID			  "134"
+	  Ports			  [2, 1]
+	  Position		  [200, 72, 230, 103]
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide2"
+	  SID			  "135"
+	  Ports			  [2, 1]
+	  Position		  [155, 137, 185, 168]
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide3"
+	  SID			  "136"
+	  Ports			  [2, 1]
+	  Position		  [150, 327, 180, 358]
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide4"
+	  SID			  "137"
+	  Ports			  [2, 1]
+	  Position		  [305, 147, 335, 178]
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide5"
+	  SID			  "138"
+	  Ports			  [2, 1]
+	  Position		  [385, 87, 415, 118]
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide6"
+	  SID			  "139"
+	  Ports			  [2, 1]
+	  Position		  [445, 302, 475, 333]
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "140"
+	  Position		  [290, 80, 320, 110]
+	  Gain			  "-1"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Im"
+	  SID			  "141"
+	  Position		  [70, 50, 100, 80]
+	  BackgroundColor	  "orange"
+	  Value			  "Im"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Isc"
+	  SID			  "142"
+	  Position		  [50, 360, 80, 390]
+	  BackgroundColor	  "orange"
+	  Value			  "Isc"
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "Math\nFunction"
+	  SID			  "143"
+	  Ports			  [1, 1]
+	  Position		  [245, 260, 275, 290]
+	  Operator		  "log"
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "Math\nFunction1"
+	  SID			  "144"
+	  Ports			  [1, 1]
+	  Position		  [440, 90, 470, 120]
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "Math\nFunction2"
+	  SID			  "145"
+	  Ports			  [1, 1]
+	  Position		  [495, 305, 525, 335]
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  "146"
+	  Ports			  [2, 1]
+	  Position		  [195, 537, 225, 568]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  SID			  "147"
+	  Ports			  [2, 1]
+	  Position		  [315, 427, 345, 458]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  SID			  "148"
+	  Ports			  [2, 1]
+	  Position		  [280, 642, 310, 673]
+	  BlockMirror		  on
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3"
+	  SID			  "149"
+	  Ports			  [2, 1]
+	  Position		  [535, 172, 565, 203]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product4"
+	  SID			  "150"
+	  Ports			  [2, 1]
+	  Position		  [410, 157, 440, 188]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product5"
+	  SID			  "151"
+	  Ports			  [2, 1]
+	  Position		  [610, 297, 640, 328]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product6"
+	  SID			  "152"
+	  Ports			  [2, 1]
+	  Position		  [500, 482, 530, 513]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Rs"
+	  SID			  "153"
+	  Position		  [415, 650, 445, 680]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "Rs"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Sref"
+	  SID			  "154"
+	  Position		  [50, 485, 80, 515]
+	  BackgroundColor	  "[1.000000, 0.501961, 1.000000]"
+	  Value			  "1000"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "155"
+	  Ports			  [2, 1]
+	  Position		  [95, 550, 115, 570]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  SID			  "156"
+	  Ports			  [2, 1]
+	  Position		  [325, 545, 345, 565]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum10"
+	  SID			  "157"
+	  Ports			  [2, 1]
+	  Position		  [550, 490, 570, 510]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "158"
+	  Ports			  [2, 1]
+	  Position		  [250, 440, 270, 460]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  SID			  "159"
+	  Ports			  [2, 1]
+	  Position		  [235, 605, 255, 625]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  SID			  "160"
+	  Ports			  [2, 1]
+	  Position		  [245, 20, 265, 40]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  SID			  "161"
+	  Ports			  [2, 1]
+	  Position		  [235, 145, 255, 165]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  SID			  "162"
+	  Ports			  [2, 1]
+	  Position		  [185, 265, 205, 285]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum7"
+	  SID			  "163"
+	  Ports			  [2, 1]
+	  Position		  [385, 300, 405, 320]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum8"
+	  SID			  "164"
+	  Ports			  [2, 1]
+	  Position		  [555, 310, 575, 330]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum9"
+	  SID			  "165"
+	  Ports			  [2, 1]
+	  Position		  [460, 495, 480, 515]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Tref"
+	  SID			  "166"
+	  Position		  [50, 590, 80, 620]
+	  BackgroundColor	  "[1.000000, 0.501961, 1.000000]"
+	  Value			  "25"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Vm"
+	  SID			  "167"
+	  Position		  [75, 130, 105, 160]
+	  BackgroundColor	  "orange"
+	  Value			  "Vm"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Voc"
+	  SID			  "168"
+	  Position		  [70, 220, 100, 250]
+	  BackgroundColor	  "orange"
+	  Value			  "Voc"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "a"
+	  SID			  "169"
+	  Position		  [260, 540, 290, 570]
+	  BackgroundColor	  "yellow"
+	  Gain			  "0.0054"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "b"
+	  SID			  "170"
+	  Position		  [180, 600, 210, 630]
+	  BackgroundColor	  "yellow"
+	  Gain			  "0.21"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "I"
+	  SID			  "171"
+	  Position		  [630, 493, 660, 507]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Tc"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tref"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "Product"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "b"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "S"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sref"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -45]
+	  DstBlock		  "Divide"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Divide"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "a"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 145; -20, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "a"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [60, 0]
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Product2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [150, 0]
+	    DstBlock		    "Sum10"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "b"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Rs"
+	  SrcPort		  1
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [-30, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [135, 0]
+	  DstBlock		  "Sum7"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Im"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, 50; -75, 0; 0, 220]
+	    DstBlock		    "Divide3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [55, 0]
+	    DstBlock		    "Divide1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Divide1"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Vm"
+	  SrcPort		  1
+	  DstBlock		  "Divide2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Voc"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "Divide2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [230, 0; 0, -55]
+	    DstBlock		    "Product4"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Divide2"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Sum5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -20; 70, 0]
+	    DstBlock		    "Gain"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Sum5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide3"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Sum6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  DstBlock		  "Math\nFunction"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  DstBlock		  "Divide4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Math\nFunction"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Divide4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Divide4"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "Divide5"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Product4"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Divide5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide5"
+	  SrcPort		  1
+	  DstBlock		  "Math\nFunction1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  Points		  [250, 0]
+	  DstBlock		  "Product3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Math\nFunction1"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 90]
+	  DstBlock		  "Product3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product3"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 115]
+	  DstBlock		  "Product5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Isc"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Divide3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [160, 0; 0, 0]
+	    Branch {
+	      Points		      [0, 60]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 0; -160, 0]
+	      Branch {
+		Points			[0, 35; -90, 0; 0, -315]
+		DstBlock		"Divide1"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[310, 0; 0, 85; 50, 0; 0, 30]
+		DstBlock		"Product6"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "V"
+	  SrcPort		  1
+	  DstBlock		  "Sum7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum7"
+	  SrcPort		  1
+	  DstBlock		  "Divide6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide6"
+	  SrcPort		  1
+	  DstBlock		  "Math\nFunction2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Math\nFunction2"
+	  SrcPort		  1
+	  DstBlock		  "Sum8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Sum8"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum8"
+	  SrcPort		  1
+	  DstBlock		  "Product5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  DstBlock		  "Sum9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product5"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 225; -195, 0]
+	  DstBlock		  "Sum9"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum9"
+	  SrcPort		  1
+	  DstBlock		  "Product6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product6"
+	  SrcPort		  1
+	  DstBlock		  "Sum10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product4"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 55; -40, 0; 0, 95]
+	  DstBlock		  "Divide6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum10"
+	  SrcPort		  1
+	  DstBlock		  "I"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "C2"
+	  Position		  [349, 160]
+	}
+	Annotation {
+	  Name			  "dI"
+	  Position		  [376, 548]
+	}
+	Annotation {
+	  Name			  "dv"
+	  Position		  [280, 608]
+	}
+	Annotation {
+	  Name			  "dT"
+	  Position		  [128, 553]
+	}
+	Annotation {
+	  Name			  "C1"
+	  Position		  [582, 179]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "PWM1"
+      SID		      "271"
+      Ports		      [1, 1]
+      Position		      [450, 483, 490, 527]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskPromptString	      "Sample Time|Frequency of Tri Wave"
+      MaskStyleString	      "edit,edit"
+      MaskVariables	      "Ts=@1;Fs=@2;"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "0.00001|5e4"
+      System {
+	Name			"PWM1"
+	Location		[400, 230, 1095, 834]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"156"
+	Block {
+	  BlockType		  Inport
+	  Name			  "D"
+	  SID			  "272"
+	  Position		  [15, 78, 45, 92]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "273"
+	  Position		  [220, 25, 250, 55]
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "274"
+	  Position		  [220, 115, 250, 145]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Repeating\nSequence1"
+	  SID			  "275"
+	  Ports			  [0, 1]
+	  Position		  [140, 145, 170, 175]
+	  LibraryVersion	  "1.256"
+	  SourceBlock		  "simulink/Sources/Repeating\nSequence"
+	  SourceType		  "Repeating table"
+	  rep_seq_t		  "[0 1/Fs/2 1/Fs]"
+	  rep_seq_y		  "[0 1 0]"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "276"
+	  Ports			  [1, 1]
+	  Position		  [150, 70, 180, 100]
+	  InputPortMap		  "u0"
+	  UpperLimit		  "0.6"
+	  LowerLimit		  "0.5"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope1"
+	  SID			  "277"
+	  Ports			  [1]
+	  Position		  [140, 14, 170, 46]
+	  ShowName		  off
+	  Floating		  off
+	  Location		  [496, 162, 937, 482]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  YMax			  "3.25"
+	  SaveName		  "ScopeData7"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope4"
+	  SID			  "278"
+	  Ports			  [1]
+	  Position		  [260, 144, 290, 176]
+	  ShowName		  off
+	  Floating		  off
+	  Location		  [188, 390, 512, 629]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0.03825"
+	  YMax			  "0.0425"
+	  SaveName		  "ScopeData4"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope5"
+	  SID			  "279"
+	  Ports			  [1]
+	  Position		  [355, 124, 385, 156]
+	  ShowName		  off
+	  Floating		  off
+	  Location		  [259, 402, 583, 641]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0.95"
+	  YMax			  "1.05"
+	  SaveName		  "ScopeData5"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  SID			  "280"
+	  Ports			  [2, 1]
+	  Position		  [200, 75, 220, 95]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  SID			  "281"
+	  Position		  [275, 70, 305, 100]
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  SID			  "282"
+	  Position		  [80, 69, 110, 101]
+	  ShowName		  off
+	  SampleTime		  "Ts"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pwm"
+	  SID			  "283"
+	  Position		  [400, 70, 415, 100]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Repeating\nSequence1"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Sum3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Scope4"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [0, -35]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [0, 35]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "Scope5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "pwm"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "D"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  Branch {
+	    DstBlock		    "Zero-Order\nHold"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "Scope1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Parallel LC Branch"
+      SID		      "70"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [281, 285, 329, 335]
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      AttributesFormatString  "\\n"
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Elements/Parallel RLC Branch"
+      SourceType	      "Parallel RLC Branch"
+      LConnTagsString	      "a"
+      RConnTagsString	      "__new0"
+      BranchType	      "C"
+      Resistance	      "1.0"
+      Inductance	      "1.0"
+      SetiL0		      off
+      InitialCurrent	      "0"
+      Capacitance	      "110e-6"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product1"
+      SID		      "72"
+      Ports		      [2, 1]
+      Position		      [295, 537, 325, 568]
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "R"
+      SID		      "73"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [765, 317, 820, 343]
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      BranchType	      "R"
+      Resistance	      "0.01"
+      Inductance	      "10e-3"
+      SetiL0		      off
+      InitialCurrent	      "0"
+      Capacitance	      "1.0"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      SID		      "74"
+      Ports		      [1]
+      Position		      [945, 233, 975, 267]
+      Floating		      off
+      Location		      [5, 48, 1371, 727]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[1 1 1]"
+	AxesColor		"[1 1 1]"
+	AxesTickColor		"[0 0 0]"
+	LineColors		"[0 0 0;0 0 0;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[1 1 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      YMin		      "2.5"
+      YMax		      "35"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Series RLC Brach"
+      SID		      "75"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [370, 201, 425, 229]
+      NamePlacement	      "alternate"
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      BranchType	      "L"
+      Resistance	      "1.0"
+      Inductance	      "150e-6"
+      SetiL0		      off
+      InitialCurrent	      "0"
+      Capacitance	      "1.0"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Single Phase Controller"
+      SID		      "76"
+      Ports		      [2, 1]
+      Position		      [750, 165, 835, 220]
+      BlockMirror	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Single Phase Controller"
+	Location		[21, 139, 1253, 796]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"156"
+	Block {
+	  BlockType		  Inport
+	  Name			  "i*"
+	  SID			  "77"
+	  Position		  [25, 123, 55, 137]
+	  NamePlacement		  "alternate"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "i"
+	  SID			  "79"
+	  Position		  [25, 38, 55, 52]
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  SID			  "80"
+	  Position		  [30, 185, 50, 205]
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Discrete\nPI Controller"
+	  SID			  "81"
+	  Ports			  [1, 1]
+	  Position		  [425, 82, 470, 128]
+	  LibraryVersion	  "1.644"
+	  SourceBlock		  "powerlib_extras/Discrete \nControl Blocks/Discrete\nPI Controller"
+	  SourceType		  "Discrete PI Controller"
+	  Kp			  "6"
+	  Ki			  "256"
+	  Par_Limits		  "[1e6 -1e6]"
+	  Init			  "0"
+	  Ts			  "5e-7"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "82"
+	  Position		  [85, 162, 150, 228]
+	  Gain			  "120*pi"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PWM Generator"
+	  SID			  "83"
+	  Ports			  [1, 1]
+	  Position		  [605, 74, 705, 136]
+	  LibraryVersion	  "1.644"
+	  SourceBlock		  "powerlib_extras/Control \nBlocks/PWM Generator"
+	  SourceType		  "PWM Generator"
+	  GeneratorMode		  "2-arm  bridge (4 pulses)"
+	  Fc			  "5e3"
+	  Internal		  off
+	  mIndex		  "0.4"
+	  Freq			  "60"
+	  Phase			  "0"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  "84"
+	  Ports			  [2, 1]
+	  Position		  [265, 122, 295, 153]
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "85"
+	  Ports			  [2, 1]
+	  Position		  [340, 95, 360, 115]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "Trigonometric\nFunction"
+	  SID			  "87"
+	  Ports			  [1, 1]
+	  Position		  [190, 180, 220, 210]
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Z2"
+	  SID			  "88"
+	  Position		  [205, 30, 240, 60]
+	  SampleTime		  "0.00001"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "PWM"
+	  SID			  "90"
+	  Position		  [750, 98, 780, 112]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Trigonometric\nFunction"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [2, 0]
+	  SrcBlock		  "Trigonometric\nFunction"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -50]
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "i*"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "i"
+	  SrcPort		  1
+	  DstBlock		  "Z2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Z2"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 60]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Discrete\nPI Controller"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "PWM Generator"
+	  SrcPort		  1
+	  DstBlock		  "PWM"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Discrete\nPI Controller"
+	  SrcPort		  1
+	  DstBlock		  "PWM Generator"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "iref"
+	  Position		  [335, 151]
+	}
+      }
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      SID		      "319"
+      Position		      [25, 130, 55, 160]
+      ZOrder		      -22
+      Time		      "0.1"
+      Before		      "25"
+      After		      "85"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Total Harmonic\nDistorsion"
+      SID		      "316"
+      Ports		      [1, 1]
+      Position		      [885, 76, 940, 134]
+      LibraryVersion	      "1.644"
+      SourceBlock	      "powerlib_extras/Measurements/Total Harmonic\nDistortion"
+      SourceType	      "Total Harmonic Distortion"
+      f1		      "60"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Universal Bridge"
+      SID		      "92"
+      Ports		      [1, 0, 0, 0, 0, 2, 2]
+      Position		      [640, 287, 695, 363]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Power\nElectronics/Universal Bridge"
+      SourceType	      "Universal Bridge"
+      Arms		      "2"
+      SnubberResistance	      "1e5"
+      SnubberCapacitance      "inf"
+      Device		      "MOSFET / Diodes"
+      Ron		      "1e-3"
+      Lon		      "0"
+      ForwardVoltages	      "[  0  0  ]"
+      ForwardVoltage	      "0"
+      GTOparameters	      "[ 10e-6 , 20e-6 ]"
+      IGBTparameters	      "[ 1e-6 , 2e-6 ]"
+      Measurements	      "None"
+      Measurements_2	      "None"
+      converterType	      "Rectifier"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "V1"
+      SID		      "93"
+      Ports		      [0, 1, 0, 0, 0, 2]
+      Position		      [960, 368, 985, 392]
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Measurements/Voltage Measurement"
+      SourceType	      "Voltage Measurement"
+      PhasorSimulation	      off
+      OutputType	      "Complex"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage Measurement1"
+      SID		      "94"
+      Ports		      [0, 1, 0, 0, 0, 2]
+      Position		      [345, 282, 370, 333]
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Measurements/Voltage Measurement"
+      SourceType	      "Voltage Measurement"
+      PhasorSimulation	      off
+      OutputType	      "Complex"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "i1"
+      SID		      "96"
+      Ports		      [0, 1, 0, 0, 0, 1, 1]
+      Position		      [720, 313, 745, 337]
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      PhasorSimulation	      off
+      OutputType	      "Complex"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "powergui"
+      SID		      "118"
+      Ports		      []
+      Position		      [15, 55, 102, 84]
+      LibraryVersion	      "1.2088"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/powergui"
+      SourceType	      "PSB option menu block"
+      SimulationMode	      "Discrete"
+      SolverType	      "Tustin"
+      SampleTime	      "5e-7"
+      frequency		      "60"
+      SPID		      off
+      DisableSnubberDevices   off
+      DisableRonSwitches      off
+      DisableVfSwitches	      off
+      SwTol		      "0"
+      Interpol		      off
+      DisplayEquations	      off
+      FunctionMessages	      off
+      frequencyindice	      "60"
+      Pbase		      "100e6"
+      ErrMax		      "1e-4"
+      Iterations	      "50"
+      UnitsV		      "kV"
+      UnitsW		      "MW"
+      echomessages	      off
+      HookPort		      off
+      EnableUseOfTLC	      off
+      x0status		      "blocks"
+      RestoreLinks	      "warning"
+      ResistiveCurrentMeasurement off
+      Frange		      "[0:2:500]"
+      Ylog		      off
+      Xlog		      on
+      ShowGrid		      off
+      save		      off
+      variable		      "ZData"
+      structure		      "ScopeData5"
+      ZoomFFT		      off
+      StartTime		      "0.0"
+      cycles		      "1"
+      DisplayStyle	      "1"
+      fundamental	      "60"
+      FreqAxis		      off
+      MaxFrequency	      "1000"
+      frequencyindicesteady   "1"
+      RmsSteady		      "1"
+      display		      off
+      Ts		      "0"
+      methode		      off
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Universal Bridge"
+      SrcPort		      LConn1
+      DstBlock		      "i1"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "i1"
+      SrcPort		      RConn1
+      DstBlock		      "R"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "R"
+      SrcPort		      RConn1
+      DstBlock		      "L1"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Universal Bridge"
+      SrcPort		      LConn2
+      Points		      [5, 0; 0, 85; 200, 0]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"AC"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[30, 0]
+	DstBlock		"V1"
+	DstPort			LConn2
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "L1"
+      SrcPort		      RConn1
+      Points		      [5, 0]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"AC"
+	DstPort			RConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[30, 0]
+	DstBlock		"V1"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      SrcBlock		      "Single Phase Controller"
+      SrcPort		      1
+      Points		      [-20, 0; 0, 105]
+      DstBlock		      "Universal Bridge"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "i1"
+      SrcPort		      1
+      Points		      [110, 0; 0, -80]
+      Branch {
+	DstBlock		"Bus\nCreator"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -35]
+	Branch {
+	  DstBlock		  "Single Phase Controller"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, -100]
+	  DstBlock		  "Total Harmonic\nDistorsion"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [340, 215; -35, 0; 0, 55]
+      DstBlock		      "Parallel LC Branch"
+      DstPort		      LConn1
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Current Measurement"
+	SrcPort			RConn1
+	Points			[65, 0]
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	Points			[-10, 0]
+	DstBlock		"Voltage Measurement1"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"Series RLC Brach"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Series RLC Brach"
+      SrcPort		      RConn1
+      Points		      [40, 0]
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[5, 0]
+	DstBlock		"IGBT"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"Diode"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "C"
+      SrcPort		      RConn1
+      Points		      [0, -20]
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[0, 95; -115, 0]
+	Branch {
+	  ConnectType		  "DEST_DEST"
+	  SrcBlock		  "IGBT"
+	  SrcPort		  RConn1
+	  Points		  [0, 70]
+	}
+	Branch {
+	  ConnectType		  "DEST_DEST"
+	  Points		  [330, 440; 145, 0]
+	  Branch {
+	    ConnectType		    "SRC_DEST"
+	    Points		    [305, 440; 25, 0]
+	    Branch {
+	      ConnectType	      "SRC_DEST"
+	      SrcBlock		      "Controlled Current Sourc"
+	      SrcPort		      LConn1
+	      Points		      [0, 225; 155, 0]
+	    }
+	    Branch {
+	      ConnectType	      "SRC_DEST"
+	      SrcBlock		      "Parallel LC Branch"
+	      SrcPort		      RConn1
+	      Points		      [0, 85; 0, 5]
+	    }
+	  }
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    DstBlock		    "Voltage Measurement1"
+	    DstPort		    LConn2
+	  }
+	}
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"Universal Bridge"
+	SrcPort			RConn2
+	Points			[0, 95; -35, 0; 0, -95]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "C"
+      SrcPort		      LConn1
+      Points		      [0, -70]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"Diode"
+	DstPort			RConn1
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"Universal Bridge"
+	SrcPort			RConn1
+	Points			[0, -90; -35, 0]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Current Measurement"
+      SrcPort		      LConn1
+      DstBlock		      "Controlled Current Sourc"
+      DstPort		      RConn1
+    }
+    Line {
+      SrcBlock		      "Product1"
+      SrcPort		      1
+      Points		      [35, 0]
+      DstBlock		      "Divide"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Voltage Measurement1"
+      SrcPort		      1
+      Points		      [5, 0; 0, 185; 10, 0]
+      Branch {
+	Points			[-300, 0]
+	Branch {
+	  Points		  [0, 65]
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "PV"
+	  DstPort		  3
+	}
+      }
+      Branch {
+	DstBlock		"MPPT"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "Divide"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Divide"
+      SrcPort		      1
+      Points		      [610, 0; 0, -415]
+      DstBlock		      "Single Phase Controller"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Bus\nCreator"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PV"
+      SrcPort		      1
+      DstBlock		      "Controlled Current Sourc"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Step"
+      SrcPort		      1
+      Points		      [20, 0; 0, 30]
+      DstBlock		      "PV"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "MPPT"
+      SrcPort		      1
+      DstBlock		      "PWM1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Total Harmonic\nDistorsion"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Current Measurement"
+      SrcPort		      1
+      Points		      [10, 0; 0, 320]
+      Branch {
+	Points			[0, 30]
+	DstBlock		"Product1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"MPPT"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "PWM1"
+      SrcPort		      1
+      Points		      [10, 0; 0, -35; -75, 0; 0, -180]
+      DstBlock		      "IGBT"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "PV"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "V1"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      Points		      [-80, 0; 0, -55]
+      DstBlock		      "Bus\nCreator"
+      DstPort		      2
+    }
+    Annotation {
+      Name		      "L"
+      Position		      [457, 195]
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    , ,   8    (     @         %    \"     $    !     0         %  0 #     $   \"$    <&]W9"
+    "7)G=6D     <W1E861Y<W1A=&4 :6YI='-T871E<P  ;&]A9&9L;W<     ;'1I=FEE=P      >FUE=&5R        9F9T=&]O;       <F5P;W)"
+    "T        :'ES=&5R97-I<P  ;&EN97!A<F%M    ;&]A9&9L;W=N97<       X    P    !@    @    &          4    (             "
+    "  !          D         #@   #     &    \"     8         !0    @               $         \"0         .    ,     8  "
+    "  (    !@         %    \"                0         )          X    P    !@    @    &          4    (              "
+    " !          D         #@   #     &    \"     8         !0    @               $         \"0         .    ,     8   "
+    " (    !@         %    \"                0         )          X    X    !@    @    &          4    (     0    $    "
+    "!          D    (        $(!HT$ .    ,     8    (    !@         %    \"                0         )          X    P"
+    "    !@    @    &          4    (               !          D         #@   #     &    \"     8         !0    @      "
+    "         $         \"0         .    ,     8    (    !@         %    \"                0         )          "
+  }
+}
